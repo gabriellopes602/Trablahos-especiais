@@ -1,0 +1,733 @@
+/*----------------*/
+/*-----BODY-------*/
+/*----------------*/
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  /*------------*/
+  /* Container */
+  /*----------*/
+   div.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  
+  /*---------------------------------*/
+  /*---------IMAGEM MENU-------------*/
+  /*---------------------------------*/
+  header {
+    width: 100%;
+    height: 170vh;
+    background: url('../image/1.jpg');
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/*----------- COR-HEADER--------*/
+    header div.cor{
+    width: 100%;
+    height: 170vh;
+    position: absolute;
+    background-color:rgb(0, 225, 255, 0.5);
+    top: 0;
+    }
+  /*---------------------*/
+  /*-------NAV BAR------*/
+  /*-------------------*/
+  div.nav_esquerda {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: -173%;
+    left: 0%;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    
+  }
+  
+  /*----------------------*/
+  /*---------MENU--------*/
+  /*--------------------*/
+  ul.menu_principal {
+    margin-left: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+   ul.menu_principal li {
+    list-style: none;
+    margin-right: 2rem;
+  }
+  
+  ul.menu_principal li a {
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+    text-shadow: 4px 6px 10px #000;
+    padding-bottom: 10px;
+    transition: all 0.1s ease-in-out;
+  }
+  
+    ul.menu_principal li a:hover {
+    opacity: 0.6;
+    border-bottom: 3px solid #000;
+  }
+  
+   ul.menu_principal li a.tickets {
+    background-color: #1672d4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  /*---------------------*/
+  /*-----Logo canto-----*/
+  /*-------------------*/
+   div.canto {
+    width: auto;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    top: -166%;
+    left: 5rem;
+    font-family: "Jost", sans-serif;
+  }
+  
+  /*------------------------------*/
+  /*----------CHAMADA------------*/
+  /*----------------------------*/
+   div.chamada {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+   div.chamada h1 {
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-size: 65px;
+  }
+  
+   div.chamada h3 {
+    font-family: "Jost", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: -40px;
+  }
+  
+  /*--------------------*/
+  /*-------BUY---------*/
+  /*------------------*/
+   div.compra {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: -70%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+   div.compra a.read {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1672d4;
+    padding: 10px 20px;
+    border-radius: 5px;
+     transition: all 0.1s ease-in-out;
+    }
+   div.compra a.read:hover {
+        opacity: 0.6;
+        border-bottom: 3px solid #fff;
+  }
+  
+   div.compra a.buy {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f02d2d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+  }
+    div.compra a.buy:hover {
+      opacity: 0.6;
+      border-bottom: 3px solid #fff;
+  }
+  
+  /*--------------------------*/
+  /*----------FEST-----------*/
+  /*------------------------*/
+  
+  
+  div.fest {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  div.fest h1 {
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+  
+  }
+  
+  div.fest h3 {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 0;
+    
+  }
+  
+  /*------ BOLINHA -------*/
+  div.bolinha{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid rgba(0, 162, 255, 0.726);
+    position: absolute;
+    left: 50%;
+    bottom: -169%;
+    transform: translate(-50%);
+  
+  }
+  /*----------LISTRA-----------*/
+  div.listra{
+    width: 3px;
+    height: 750px;
+    position: absolute;
+    left: 50%;
+    top: 1609px;
+    background-color: rgba(0, 162, 255, 0.726);
+    transform: translate(-50%);
+  }
+
+  /*-------- LISTE1 --------*/
+
+  div.liste1{
+    width: 500px;
+    height: 330px;
+    position: absolute;
+    left: 75%;
+    top: 315%;
+    transform: translate(-50%);
+    
+  }
+
+  div.liste1 h1{
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-size: 33px;
+  }
+
+  div.liste1 h3{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+  }
+
+  /*------ IMAGEM LISTE1 ------*/
+
+   div.image1{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 11%;
+    top: 320%;
+
+  }
+  div.image1 img{
+    width: 400px;
+    height: 260px;
+
+  }
+/*------ BOLINHA-2 -------*/
+div.bolinhas{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 3px solid rgba(0, 162, 255, 0.726);
+    position: absolute;
+    top: 403%;
+} 
+
+/*----- DATE1 -----*/
+div.date{
+    width: 150px;
+    height: 80px;
+    left: 46%;
+    top: 392%;
+    position: absolute;
+}
+div.date h3{
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*------------LISTRA 1 --------------*/
+div.listra1{
+width: 3px;
+height: 750px;
+position: absolute;
+left: 50%;
+top: 2440px;
+background-color: rgba(0, 162, 255, 0.726);
+transform: translate(-50%);
+}
+/*---------- TEXTO 2 ---------*/
+div.texto_2{
+    width: 450px;
+    height: 330px;
+    position: absolute;
+    left: 73%;
+    top: 475%;
+    transform: translate(-50%);
+}
+div.texto_2 h1{
+    font-size: 33px;
+    font-family: "Jost", sans-serif; 
+}
+div.texto_2 h3{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+
+/*--------- IMAGEM 2 -----------*/
+div.image_2{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 11%;
+    top: 482%;
+
+}
+div.image_2 img{
+    width: 400px;
+    height: 260px;
+
+}
+
+/*------- DATE 2 --------*/
+div.date_2{
+    width: 150px;
+    height: 80px;
+    left: 46%;
+    top: 544%;
+    position: absolute;
+}
+div.date_2 h3{
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    }
+/*------- BOLINHA 3 --------*/
+div.bolinha_3{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 3px solid rgba(0, 162, 255, 0.726);
+    position: absolute;
+    top: 555%;
+    left: 49%;
+} 
+
+/*-------- LISTRA 2 --------*/
+div.listra_2{
+    width: 3px;
+    height: 750px;
+    position: absolute;
+    left: 50%;
+    top: 3350px;
+    background-color: rgba(0, 162, 255, 0.726);
+    transform: translate(-50%);
+}
+/*-------IMGAGEM 3 -------*/
+div.image_3{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 11%;
+    top: 625%;
+
+}
+div.image_3 img{
+    width: 400px;
+    height: 260px;
+}
+/*------- TEXTO 3 --------*/
+div.texto_3{
+    width: 450px;
+    height: 330px;
+    position: absolute;
+    left: 73%;
+    top: 620%;
+    transform: translate(-50%);
+}
+div.texto_3 h1{
+    font-size: 33px;
+    font-family: "Jost", sans-serif; 
+}
+div.texto_3 h3{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+
+/*------------ LISTE 2 -----------*/
+div.liste_2{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    top: 700% ;
+}
+div.liste_2 h1{
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+div.liste_2 h3{
+    font-family: "Jost", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+/*--------- CRONOMETRO ---------*/
+div.cronometro {
+  width: 80%;
+  height: 300px;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  top: 755%;
+  justify-content:space-around ;
+  left: 14%;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+div.cronometro .par h1{
+  font-size: 70px;
+  font-family: "Jost", sans-serif;
+}
+div.cronometro .par h3{
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  font-size: 25px;
+  margin-top: -70px;
+}
+/*------- RODAPE ---------*/
+div.rodape{
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  top: 795%;
+  text-align: center;
+}
+div.rodape h3{
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+}
+div.e_email{
+  width: 400px;
+  height:200px ;
+  position: absolute;
+  top: 820%;
+  left: 37%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+div.e_email input.email{
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+div.e_email a.sub{
+  width: 130px;
+  height: 50px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+  font-weight: bold;
+  font-family:"Jost", sans-serif;
+  color: #fff;
+  background-color: rgba(0, 89, 255, 0.521);
+  border-radius: 5px;
+}
+/*----- TEXT_PAGE------*/
+div.text_page{
+  width: 110%;
+  height: 300px;
+  position: absolute;
+  top: 900%;
+
+  display: flex;
+  background-color: rgb(0, 225, 255, 0.5);
+ 
+}
+
+/*------- IMAGENS LOGO -------*/
+div.text_page h1{
+  font-family: "Jost", sans-serif;
+  font-size: 65px;
+  color: #000000ef;
+  margin-left: 29%;
+}
+div.image_logos{
+  width: 600px;
+  height: 70px;
+  position: absolute;
+  top: 930%;
+  left: 26%;
+  display: flex;
+  gap: 30px;
+}
+
+/*--------- TEXT ABOUT ---------*/
+div.text_about{
+  width: 700px;
+  height: 1550px;
+  position: absolute;
+  top: 980%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+div.text_about h1{
+  font-family: "Jost", sans-serif;
+  font-size: 70px;
+  color: #000000ef;
+}
+div.text_about h3{
+  font-family: "Jost", sans-serif;
+  font-size: 25px;
+  color: #000000ef;
+  font-weight: 400;
+}
+div.text_about a.read{
+  width: 140px;
+  height: 50px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family:"Jost", sans-serif;
+  color: #fff;
+  background-color: rgba(0, 89, 255, 0.521);
+  border-radius: 5px;
+
+}
+
+/*-------- IMAGEM ESTUDO ----------*/
+div.img_escolar{
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 1085%;
+  left: 650px;
+  display: flex;
+}
+
+/*----------- TEXT REQUIRIMENTS-----------*/
+div.text_require{
+  width: 110%;
+  height: 550px;
+  position: absolute;
+  top: 1250%;
+  background-color: rgb(0, 225, 255, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+}
+div.text_require h1{
+  font-family: "Jost", sans-serif;
+  font-size: 45px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+div.text_require p{
+  font-family: "Jost", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin-left: 100px;
+}
+
+/*--------- TEXT VIDEO ----------*/
+div.text_video{
+  width: 110%;
+  height: 1100px;
+  position: absolute;
+  display: flex;
+  top: 1370%;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 225, 255, 0.5);
+}
+div.text_video h1{
+  font-family: "Jost", sans-serif;
+  font-size: 70px;
+}
+div.text_video p{
+  font-family: "Jost", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+/*-----------VIDEO ----------*/
+div.video{
+  width: 1100px;
+  height: 550px;
+  position: absolute;
+  display: flex;
+  top: 1450%;
+  left: 8%; 
+}
+
+/*-----------TEXT LOCATION -----------*/
+div.location{
+  width: 110%;
+  height: 1200px;
+  position: absolute;
+  display: flex;
+  top: 1570%;
+ background-color: rgb(0, 225, 255, 0.5);
+
+ 
+}  
+div.location h1{
+  font-family: "Jost", sans-serif;
+  font-size: 55px;
+  margin-left: 34%;
+}
+
+/*------------- MAPA ------------*/
+div.mapa img{
+  width: 1100px;
+  height: 550px;
+  position: absolute;
+  display: flex;
+  top: 1600%;
+  left: 4%;
+  z-index: 3;
+}
+
+/*--------- DESCRICAO LOCATION  ----------*/
+div.descricao{
+  width: 350px;
+  height: 110px;
+  position: relative;
+  display: flex;
+  top: 1520%;
+  left: -30%;
+  background-color: #ffffff;
+  z-index: 4;
+  flex-direction: column;
+
+}
+div.descricao h5{
+  margin-top: 0;
+  font-family:"Jost", sans-serif;
+}
+
+div.descricao p{
+margin-top: -17px;
+font-family:"Jost", sans-serif;
+font-weight: 400;
+}
+div.descricao a.direc{
+margin-left: 80%;
+margin-top: -50px;
+font-weight: 400;
+text-decoration: none;
+color: blue;  
+}
+div.descricao a.view{
+margin-top: 25px;
+font-weight: 400;
+text-decoration: none;
+color: blue; 
+}
+div.descricao a:hover {
+  text-decoration: underline;
+}
+
+/*-------------COPY --------------*/
+div.cop{
+  width: 700px;
+  height: 200px;
+  position: absolute;
+  display: flex;
+  top: 1720%;
+  left: 21%;
+  flex-direction: column;
+  align-items: center;
+}
+div.cop p{
+  font-size: 25px;
+  font-family:"Jost", sans-serif;
+  font-weight: 400;
+}
+div.cop a{
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  color: #1672d4;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+  /*-----------------------------------------*/
